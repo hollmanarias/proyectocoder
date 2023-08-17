@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 body{
     background-color: rgba(1, 2, 0, 0.178);
 }
 .pagina1{
-    height: 80vh;
+    height:auto;
     background-image: url(../img/mejores_ollas_a_presion_76806_orig.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,17 +18,22 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.pagina1 h1{
+    color: rgb(16, 49, 58);
+    background-color: rgba(151, 151, 151, 0.397);
+    text-align: justify;
+
+}
 .grid{
         display: grid;
-        width: 100%;
         height: 100vh;
         grid-template-columns:2fr 2fr;
         grid-template-rows:1fr 1fr ;
-        grid-template-areas: 
-        "bebidas bebidas parrafo parrafo "
-        "bebidas2 bebidas2 parrafo2 parrafo2";
-}
-.col{
+        grid-template-areas:
+        "bebidas parrafo "
+        "bebidas2 parrafo2";
+    }
+.bebidas{
     background-image: url(../img/michelada\ de\ mango.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,12 +68,7 @@ body{
     font-family:Roboto Condensed;
     grid-area: parrafo2;
 }
-.pagina1 h1{
-    color: rgb(16, 49, 58);
-    background-color: rgba(151, 151, 151, 0.397);
-    text-align: justify;
 
-}
 .pagina1 h3{
     color: rgb(16, 49, 58);
     background-color: rgba(151, 151, 151, 0.397);
@@ -145,9 +145,9 @@ textarea{
 @media screen and (max-width: 780px) {
     
     body{
-        background-color: rgba(240, 109, 109, 0.507);}
+        background-color: rgba(3, 39, 2, 0.274);}
         .pagina1 h1{
-            color: rgba(59, 243, 22, 0.158);
+            color: rgba(9, 43, 2, 0.877);
             background-color: rgba(151, 151, 151, 0.397);
             text-align: justify;}
             .pagina2{
@@ -155,6 +155,16 @@ textarea{
                 justify-content: center;
                 flex-direction: column;
                 text-align: center;
+            }
+            .grid{
+                height: 100vh;
+                grid-template-columns:1fr;
+                grid-template-rows:1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                "bebidas"
+                "parrafo"
+                "bebidas2"
+                "parrafo2"
             }
     
 }
@@ -174,7 +184,7 @@ textarea{
             align-items: center;
             flex-direction:column-reverse;}
         .pagina1 h1{
-            color: rgb(131, 8, 8);
+            color: rgb(41, 37, 37);
             background-color: rgba(151, 151, 151, 0.397);
             text-align: justify;
             display: flex;
