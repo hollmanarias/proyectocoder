@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(1, 2, 0, 0.178);
+}
+.pagina1{
+    height: 80vh;
+    background-image: url(../img/mejores_ollas_a_presion_76806_orig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns:2fr 2fr;
+        grid-template-rows:1fr 1fr ;
+        grid-template-areas: 
+        "bebidas bebidas parrafo parrafo "
+        "bebidas2 bebidas2 parrafo2 parrafo2";
+}
+.col{
+    background-image: url(../img/michelada\ de\ mango.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    grid-area: bebidas;
+}
+.parrafo{
+    background-color: black;
+    color: aliceblue;
+    font-family:Roboto Condensed;
+    grid-area: parrafo;
+}
+.bebidas2{
+    background-image: url(../img/michelada.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: aqua;
+    grid-area: bebidas2;
+}
+.parrafo2{
+    background-color: black;
+    color: aliceblue;
+    font-family:Roboto Condensed;
+    grid-area: parrafo2;
+}
+.pagina1 h1{
+    color: rgb(16, 49, 58);
+    background-color: rgba(151, 151, 151, 0.397);
+    text-align: justify;
+
+}
+.pagina1 h3{
+    color: rgb(16, 49, 58);
+    background-color: rgba(151, 151, 151, 0.397);
+    text-align: justify;
+}
+.formularios{
+    padding: 7rem;
+}
+.menu{
+    font-family:roboto-condensed;
+    display: inline;
+    font-size: 23px;
+}
+.pagina2{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: red;
+    font-family: 'Lumanosimo', cursive;
+    font-size: 6rem;
+    text-align: center;
+}
+h2{
+    font-family: 'Roboto Condensed';
+    text-align: left;
+    font-size: 4rem;
+    text-align: center;
+}
+h3{
+    font-family: 'Roboto Condensed';
+    text-align: left;
+    font-size: 2rem;
+    text-align: left;
+    padding: 7rem;
+}
+h4{
+    
+    font-family: 'Roboto Condensed';
+    text-align: left;
+    font-size: 2rem;
+    text-align: left;
+    padding: 7rem;
+
+}
+p{  
+    font-family:roboto condensed;
+    display:inline-block;
+    padding: 7rem;
+    color: black;
+    text-align:justify;
+
+    }
+.li{
+    list-style: none;
+    padding: 7rem;
+    font-size: 1.5rem;
+    font-family: roboto condensed;
+}
+label{
+    padding: 7rem;
+    font-size: 2rem;
+    font-family: 'Lumanosimo', cursive;
+}
+footer{
+    font-family: Roboto Condensed;
+}
+.caja{
+    padding: 7rem;
+}
+textarea{
+    padding: 7rem;
+}
+@media screen and (max-width: 780px) {
+    
+    body{
+        background-color: rgba(240, 109, 109, 0.507);}
+        .pagina1 h1{
+            color: rgba(59, 243, 22, 0.158);
+            background-color: rgba(151, 151, 151, 0.397);
+            text-align: justify;}
+            .pagina2{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    body{
+        background-color: rgb(255, 255, 255);}
+        .pagina1{
+            height: 100vh;
+            background-image: url(../img/mejores_ollas_a_presion_76806_orig.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column-reverse;}
+        .pagina1 h1{
+            color: rgb(131, 8, 8);
+            background-color: rgba(151, 151, 151, 0.397);
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+        }
+            
+}
